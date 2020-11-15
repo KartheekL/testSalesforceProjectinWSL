@@ -1,6 +1,6 @@
 <template>
     <lightning-card title="CARD">
-		<lightning-input label="INPUT" class="slds-p-around_medium" value=""></lightning-input>
-		<lightning-input readonly="True" label="OUTPUT-readonly" class="slds-p-around_medium"></lightning-input>
+		<lightning-input label="INPUT" class="slds-p-around_medium" value={data} onchange={updateOutput}></lightning-input>
+		<lightning-input readonly="True" label="OUTPUT-readonly" class="slds-p-around_medium" value={output}></lightning-input>
 	</lightning-card>
 </template>
