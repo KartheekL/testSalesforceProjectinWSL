@@ -1,9 +1,9 @@
 import { LightningElement } from 'lwc';
 
 export default class TestLWC extends LightningElement {
-	data = 4;
+	data;
 	output;
 	updateOutput(event){
-		this.output = this.data;
+		this.output = event.target.value;
 	}
 }
